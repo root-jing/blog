@@ -1,0 +1,4 @@
+.idea
+settings.py
+db.mysql
+project/__pycache__/

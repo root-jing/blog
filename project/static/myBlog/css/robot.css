@@ -1,0 +1,58 @@
+div.robot{
+    margin-top:140px;
+	width: 100%;
+	height: 100px;
+	background-color:rgba(0, 0, 0, 0.8);
+}
+div.robot .ra{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 100px;
+    text-align: center;
+    cursor: help;
+}
+div.robot .ra:hover{
+    color: rgba(225,225,225,0.65);
+}
+div#none{
+    display: none;
+    width: 100%;
+    height: 300px;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+#q{
+    background-color: #161d2b;
+    font-size: 20px;
+    color:#fff;
+}
+span.span{
+    display: inline-block;
+    font-size: 25px;
+    /*height: 200px;*/
+    /*width: 100px;*/
+    /*line-height: 200px;*/
+    text-align:center;
+}
+.gg{
+
+     background-color: #161d2b;
+    font-size: 20px;
+    color:#fff;
+
+
+}
+div.questions{
+    float: left;
+}
+.submit{
+    width: 100px;
+    height: 50px;
+    background-color: #b9f3fe;
+
+}
+.submit:hover{
+
+    background-color: #fff;
+
+}

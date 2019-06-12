@@ -1,0 +1,7 @@
+db==0.1.1
+Django==2.0
+django-tinymce==2.8.0
+imageio==2.5.0
+Pillow==5.4.1
+PyMySQL==0.9.3
+

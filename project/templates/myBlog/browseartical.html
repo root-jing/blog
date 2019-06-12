@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看文章</title>
+    <link rel="icon" src="image/x-icon" href="/static/myBlog/img/icon.ico">
+</head>
+<body>
+    <h1>侯爷比较懒，所以页面不好看</h1>
+    <h2>所有留言</h2>
+    <ul>
+        {% for i in articals %}
+        <li>{{i.name}}--{{i.contents}}</li>
+        <br><br>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

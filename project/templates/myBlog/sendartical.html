@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发送文章</title>
+    <link rel="icon" src="image/x-icon" href="/static/myBlog/img/icon.ico">
+    <link rel="stylesheet" href="/static/myBlog/css/givecontents.css">
+    <script type="text/javascript" src="/static/tiny_mce/tiny_mce.js"></script>
+    <script type="text/javascript">
+        tinyMCE.init({
+            'mode':'textareas',
+            'theme':'advanced',
+            'width':800,
+            'height':600,
+        })
+    </script>
+</head>
+<body>
+    <form action="/complete/" method="post">
+        {% csrf_token %}
+    <h1>标题:{{stitle}}</h1>
+        <h1>发件人:{{sname}}</h1>
+        <textarea name="contents">
+            --请在这里编写留言--
+        </textarea>
+        <input class="button" type="submit" value="提交" style="width: 200px;height: 200px">
+    </form>
+    <h1>侯爷比较懒，所以页面不好看</h1>
+
+</body>
+</html>

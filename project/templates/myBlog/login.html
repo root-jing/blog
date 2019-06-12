@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游客留言请登录</title>
+    <link rel="stylesheet" href="/static/myBlog/css/login.css">
+    <link rel="icon" src="image/x-icon" href="/static/myBlog/img/icon.ico">
+</head>
+<body>
+    <form action="/codetext/" method="post" class="dark-matter">
+        {% csrf_token %}
+        <h1>游客登录
+        <span>请输入所有项，并到留言区发言，本次登陆不将涉及您的任何隐私</span>
+        </h1>
+
+        <label>
+        <span>游客昵称 :</span>
+        <input id="name" type="text" name="name" placeholder="你即将用的昵称,这里不需要注册，随心所欲" />
+        </label>
+
+        <label>
+        <span>游客格言 :</span>
+        <input class="ps" type="text" name="ps" placeholder="填入你的人生格言" />
+        </label>
+
+        <label>
+        <span>游客年龄 :</span>
+        <input class="age" type="number" name="age" max='100' min="1" step="1" placeholder=21 />
+        </label>
+
+
+        <label>
+        <span>游客性别 :</span>
+        <input id="r1" type="radio" name="gender" value="1"/>男<input id="r2" type="radio" name="gender" value="0" />女
+        </label>
+
+
+        <label>
+        <span>留言主题 :</span>
+        <textarea id="message" name="title" placeholder="Your Title to jingyanghou"></textarea>
+        </label>
+
+        <hr>
+        <label>
+        <span>文明约定 :</span><select name="isDelete">
+        <option value="0">是</option>
+        <option value="1">否</option>
+        </select>
+        </label>
+
+
+        <label>
+        <span>验证码 :</span>
+        <input type="text" name="code">
+        <img src="/verifycode/" alt="验证码">
+            <p>{{msg}}</p>
+        </label>
+
+
+
+
+
+        <label>
+        <span>&nbsp;</span>
+        <input type="submit" class="button" value="登录"/>
+        </label>
+
+    </form>
+    <h1>侯爷比较懒，所以页面不好看</h1>
+
+</body>
+</html>

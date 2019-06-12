@@ -1,0 +1,11 @@
+下载pycharm并安装，打开blog文件夹
+1:下载mysql数据库
+1:pip install Django==2.0.0
+2:pip install pymysql  create database blog
+3:删除marigrate文件
+4:python manage.py makemigrations --empty myBlog
+  python manage.py makemigrations 
+  python manage.py migrate
+5:修改ALLOWED_HOSTS = ['xxx.xxx.xxx.xxx']
+6:pip install django-tinymce
+7:python manage.py runserver xxx.xxx.xxx.xxx:8080
